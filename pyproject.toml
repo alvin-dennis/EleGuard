@@ -1,0 +1,20 @@
+[project]
+name = "eleguard"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "inference>=0.30.0",
+    "inference-sdk>=0.30.0",
+    "keras>=3.8.0",
+    "matplotlib>=3.10.0",
+    "numpy>=1.26.4",
+    "opencv-python>=4.10.0.84",
+    "opencv-python-headless>=4.10.0.84",
+    "python-dotenv>=1.0.1",
+    "roboflow>=1.1.50",
+    "scikit-learn>=1.6.1",
+    "supervision>=0.22.0",
+    "tensorflow>=2.18.0",
+]
