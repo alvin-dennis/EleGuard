@@ -7,7 +7,7 @@
 
 # # Initialize the Roboflow inference client
 # CLIENT = InferenceHTTPClient(
-#     api_url="https://detect.roboflow.com", api_key="q1Da5hSpF9063JELvJer"
+#     api_url="https://detect.roboflow.com", api_key=""
 # )
 
 
@@ -139,9 +139,15 @@ import time
 from inference_sdk import InferenceHTTPClient
 from detection import check_image
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
+api_key = os.getenv("ROBOFLOW_API_KEY")
+
 # Initialize the Roboflow inference client
 CLIENT = InferenceHTTPClient(
-    api_url="https://detect.roboflow.com", api_key="q1Da5hSpF9063JELvJer"
+    api_url="https://detect.roboflow.com", api_key="api_key"
 )
 
 
