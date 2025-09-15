@@ -7,7 +7,6 @@ from picamera2 import Picamera2
 from inference_sdk import InferenceHTTPClient
 from detection import check_image
 from twilio.rest import Client
-import random
 
 
 alert_sound = None
